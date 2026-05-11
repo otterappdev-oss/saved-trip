@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Saved Trip - Organisez vos voyages depuis vos contenus sauvegardés</title>
+    <title>Saved Trip - De l'inspiration voyage au plan prêt à partir</title>
     <meta
       name="description"
-      content="Saved Trip transforme vos reels, pins, screenshots et notes en lieux sauvegardés puis en itinéraires clairs, prêts à partir."
+      content="Saved Trip transforme vos vidéos, liens et idées sauvegardées en lieux organisés, itinéraires, cartes et budgets. Une app pour voyageurs, créateurs et partenaires travel."
     >
-    <meta property="og:title" content="Saved Trip - Vos voyages, enfin organisés">
+    <link rel="canonical" href="https://www.savedtrip.com/">
+    <meta property="og:title" content="Saved Trip - Transformez vos inspirations en voyages">
     <meta
       property="og:description"
-      content="Importez vos inspirations de voyage, retrouvez vos lieux et créez un itinéraire en quelques secondes."
+      content="Importez vos inspirations voyage, retrouvez les lieux importants et préparez un itinéraire clair avec Saved Trip."
     >
-    <meta property="og:image" content="/assets/import_link_background.png">
-    <meta name="theme-color" content="#EEF8FE">
+    <meta property="og:image" content="https://www.savedtrip.com/assets/import_link_background.png">
+    <meta name="theme-color" content="#edf8ff">
     <link rel="icon" href="/assets/pingui_welcome.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,131 +27,265 @@
   </head>
   <body>
     <header class="site-header" aria-label="Navigation principale">
-      <a class="brand" href="#top" aria-label="Saved Trip accueil">
+      <a class="brand" href="/" aria-label="Saved Trip accueil">
         <img src="/assets/pingui_welcome.png" alt="" class="brand-mark">
         <span>Saved Trip</span>
       </a>
       <nav class="nav-links" aria-label="Sections">
         <a href="#fonctionnement">Fonctionnement</a>
-        <a href="#app">App</a>
-        <a href="/privacy">Confidentialite</a>
+        <a href="#voyageurs">Voyageurs</a>
+        <a href="#partenaires">Partenaires</a>
+        <a href="#confiance">Confiance</a>
         <a href="/support">Support</a>
       </nav>
-      <a class="header-cta" href="mailto:support@savedtrip.com?subject=Acces%20Saved%20Trip">Demander l'accès</a>
+      <a class="header-cta" href="mailto:support@savedtrip.com?subject=Demo%20Saved%20Trip">Demander une démo</a>
     </header>
 
     <main id="top">
-      <section class="hero-section">
+      <section class="hero-section" aria-labelledby="hero-title">
         <img class="hero-bg" src="/assets/import_link_background.png" alt="">
         <div class="hero-content">
-          <p class="kicker">SAVED TRIP APP</p>
-          <h1>Vos voyages, enfin organisés.</h1>
-          <p class="hero-copy">
-            Importez un reel, un pin, une vidéo, une capture ou une note. Saved Trip retrouve les lieux, range vos envies et construit un itinéraire clair pour votre prochain départ.
+          <p class="kicker">APP VOYAGE • SOCIAL IMPORT • ITINÉRAIRES</p>
+          <h1 id="hero-title">Saved Trip</h1>
+          <p class="hero-lead">
+            L'app qui transforme les vidéos, liens et idées voyage sauvegardées en lieux organisés, itinéraires, cartes et budgets prêts à utiliser.
           </p>
           <div class="hero-actions" aria-label="Actions principales">
-            <a class="primary-action" href="mailto:support@savedtrip.com?subject=Acces%20Saved%20Trip">Demander l'accès</a>
-            <a class="secondary-action" href="#fonctionnement">Voir comment ça marche</a>
+            <a class="primary-action" href="mailto:support@savedtrip.com?subject=Acces%20Saved%20Trip">Rejoindre l'accès</a>
+            <a class="secondary-action" href="#partenaires">Devenir partenaire</a>
           </div>
+          <dl class="hero-proof" aria-label="Points forts Saved Trip">
+            <div>
+              <dt>Import</dt>
+              <dd>Reels, vidéos, liens, notes</dd>
+            </div>
+            <div>
+              <dt>Plan</dt>
+              <dd>Itinéraire, carte, budget</dd>
+            </div>
+            <div>
+              <dt>Travel</dt>
+              <dd>Pour users et partenaires</dd>
+            </div>
+          </dl>
         </div>
-        <div class="phone-showcase" aria-label="Aperçu de l'application Saved Trip">
+
+        <div class="product-stage" aria-label="Aperçu produit Saved Trip">
           <div class="phone-frame">
-            <div class="phone-status"></div>
+            <div class="phone-notch"></div>
             <div class="app-screen">
-              <div class="app-greeting">
-                <span>Hello, Explorer!</span>
-                <small>Ready for your next adventure?</small>
+              <div class="screen-top">
+                <span>Travel Library</span>
+                <small>23 places saved</small>
               </div>
-              <div class="stat-grid">
-                <div><strong>24</strong><span>Saved</span></div>
-                <div><strong>03</strong><span>Planned</span></div>
-                <div><strong>08</strong><span>Countries</span></div>
+              <div class="screen-search">Search destinations...</div>
+              <div class="saved-grid">
+                <article>
+                  <img src="/assets/travel_library_background.png" alt="">
+                  <span>Tokyo saved</span>
+                </article>
+                <article>
+                  <img src="/assets/import_link_background.png" alt="">
+                  <span>New York plan</span>
+                </article>
               </div>
-              <div class="post-card">
-                <img src="/assets/travel_library_background.png" alt="">
-                <div>
-                  <strong>Santorini Sunset</strong>
-                  <span>Saved from Instagram</span>
-                </div>
-              </div>
-              <div class="mascot-bubble">
-                <img src="/assets/pingui_welcome.png" alt="">
-                <span>I found 12 places for your trip.</span>
+              <div class="trip-card">
+                <strong>4 days in Manhattan</strong>
+                <span>20 stops • route map • budget</span>
               </div>
             </div>
+          </div>
+          <div class="mascot-note">
+            <img src="/assets/pingui_welcome.png" alt="">
+            <span>J'ai retrouvé les lieux utiles et préparé une route claire.</span>
           </div>
         </div>
       </section>
 
-      <section id="fonctionnement" class="section workflow-section">
+      <section class="section problem-section" aria-labelledby="problem-title">
         <div class="section-heading">
-          <p class="kicker">DE L’INSPIRATION AU PLAN</p>
-          <h2>Gardez ce que vous aimez, Saved Trip s’occupe du rangement.</h2>
+          <p class="kicker">LE PROBLÈME</p>
+          <h2 id="problem-title">L'inspiration voyage est partout. Le voyage, lui, doit être clair.</h2>
+          <p>
+            Les idées arrivent depuis TikTok, Instagram, YouTube, Pinterest, Google Maps, des notes, des screenshots et des messages. Saved Trip devient l'endroit où tout cela se transforme en plan exploitable.
+          </p>
+        </div>
+        <div class="audience-grid">
+          <article>
+            <span class="card-label">Voyageurs</span>
+            <h3>Retrouver ses idées sans fouiller partout.</h3>
+            <p>Une bibliothèque visuelle pour garder les spots, restaurants, activités et inspirations avant de construire un vrai séjour.</p>
+          </article>
+          <article>
+            <span class="card-label">Créateurs</span>
+            <h3>Transformer du contenu en parcours actionnable.</h3>
+            <p>Les recommandations vues en vidéo deviennent des lieux, des journées et des routes que l'audience peut vraiment utiliser.</p>
+          </article>
+          <article>
+            <span class="card-label">Partenaires</span>
+            <h3>Convertir l'intérêt voyage en intention concrète.</h3>
+            <p>Destinations, hôtels, restaurants et expériences peuvent rejoindre un parcours où l'utilisateur prépare déjà son prochain départ.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="fonctionnement" class="section workflow-section" aria-labelledby="workflow-title">
+        <div class="section-heading">
+          <p class="kicker">COMMENT ÇA MARCHE</p>
+          <h2 id="workflow-title">Du lien sauvegardé à l'itinéraire jour par jour.</h2>
         </div>
         <div class="workflow-grid">
           <article class="workflow-card">
             <img src="/assets/pingui_link_www.png" alt="">
-            <h3>Importez vos liens</h3>
-            <p>Reels, TikToks, Shorts, Pins ou pages web: vos idées de voyage arrivent dans une seule bibliothèque.</p>
+            <span class="step">01</span>
+            <h3>Importez</h3>
+            <p>Collez un lien social, une page web, une note ou une capture. Saved Trip centralise l'inspiration au même endroit.</p>
           </article>
           <article class="workflow-card">
             <img src="/assets/pingui_screenshot_phone_pop.png" alt="">
-            <h3>Capturez vos trouvailles</h3>
-            <p>Ajoutez une capture ou une note, puis Saved Trip extrait les lieux utiles et les informations importantes.</p>
+            <span class="step">02</span>
+            <h3>Identifiez</h3>
+            <p>L'app détecte les lieux, villes, catégories, sources et signaux utiles pour préparer le voyage.</p>
           </article>
           <article class="workflow-card">
             <img src="/assets/pingui_notes_exact.png" alt="">
-            <h3>Planifiez le séjour</h3>
-            <p>Transformez vos adresses sauvegardées en itinéraire jour par jour, avec une vue simple à suivre.</p>
+            <span class="step">03</span>
+            <h3>Organisez</h3>
+            <p>Les adresses rejoignent une bibliothèque claire avec favoris, catégories, sources et contexte.</p>
+          </article>
+          <article class="workflow-card">
+            <img src="/assets/home_background_design.png" alt="">
+            <span class="step">04</span>
+            <h3>Planifiez</h3>
+            <p>Créez un itinéraire avec journées, carte, budget indicatif, temps de trajet et actions de réservation.</p>
           </article>
         </div>
       </section>
 
-      <section id="app" class="section app-section">
-        <div class="library-preview">
-          <img src="/assets/travel_library_background.png" alt="Bibliothèque de voyages Saved Trip">
-          <div class="library-overlay">
-            <span class="pill">Library</span>
-            <h2>Une bibliothèque visuelle pour toutes vos envies.</h2>
+      <section id="voyageurs" class="section product-section" aria-labelledby="product-title">
+        <div class="media-panel">
+          <img src="/assets/travel_library_background.png" alt="Aperçu de la bibliothèque Saved Trip">
+          <div class="media-caption">
+            <span>Saved Library</span>
+            <strong>Une seule maison pour toutes vos idées voyage.</strong>
           </div>
         </div>
-        <div class="feature-list">
-          <div>
-            <span class="feature-icon">01</span>
-            <h3>Centralisez</h3>
-            <p>Toutes vos inspirations voyage sont regroupées, au lieu de rester perdues entre plusieurs apps.</p>
-          </div>
-          <div>
-            <span class="feature-icon">02</span>
-            <h3>Comprenez</h3>
-            <p>Saved Trip lit vos contenus et retrouve les lieux, les villes, les plateformes et les contextes utiles.</p>
-          </div>
-          <div>
-            <span class="feature-icon">03</span>
-            <h3>Partez</h3>
-            <p>Vos lieux deviennent un plan exploitable, pensé pour passer de l’envie au voyage réel.</p>
+        <div class="product-copy">
+          <p class="kicker">POUR LES VOYAGEURS</p>
+          <h2 id="product-title">Préparez un city trip, un road trip ou un week-end sans repartir de zéro.</h2>
+          <div class="feature-stack">
+            <article>
+              <span>Map</span>
+              <h3>Visualisez les lieux sur une carte.</h3>
+              <p>Comprenez où se trouvent vos envies et regroupez les étapes qui ont du sens ensemble.</p>
+            </article>
+            <article>
+              <span>Budget</span>
+              <h3>Gardez une estimation simple.</h3>
+              <p>Hébergement, food, transport et activités restent lisibles avant même de réserver.</p>
+            </article>
+            <article>
+              <span>Itinerary</span>
+              <h3>Passez de la liste au plan.</h3>
+              <p>Organisez les lieux par journée, ajustez les stops et gardez le voyage facile à suivre.</p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="attente" class="section waitlist-section">
-        <div>
-          <p class="kicker">BIENTÔT DISPONIBLE</p>
-          <h2>Préparez votre prochain voyage avec Saved Trip.</h2>
+      <section id="partenaires" class="section partner-section" aria-labelledby="partner-title">
+        <div class="partner-copy">
+          <p class="kicker">POUR LES ENTREPRISES</p>
+          <h2 id="partner-title">Un canal pour rencontrer les voyageurs au moment où ils construisent leur séjour.</h2>
           <p>
-            Saved Trip prepare ses pages publiques pour l'App Store, Meta Review et le support utilisateur.
+            Saved Trip aide les acteurs du voyage à passer d'une visibilité passive à une présence utile dans la préparation: destinations, expériences, restaurants, hôtels, conciergeries, agences, marques et créateurs.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action" href="mailto:support@savedtrip.com?subject=Partenariat%20Saved%20Trip">Proposer un partenariat</a>
+            <a class="secondary-action" href="/support">Contacter l'équipe</a>
+          </div>
+        </div>
+        <div class="business-grid">
+          <article>
+            <span>Destinations</span>
+            <h3>Créer des parcours plus actionnables.</h3>
+            <p>Reliez l'inspiration à des stops, quartiers, activités et séjours que les voyageurs peuvent sauvegarder.</p>
+          </article>
+          <article>
+            <span>Hospitality</span>
+            <h3>Apparaître dans un contexte de planification.</h3>
+            <p>Hôtels, restaurants et expériences peuvent être découverts quand l'utilisateur prépare sa route.</p>
+          </article>
+          <article>
+            <span>Créateurs</span>
+            <h3>Donner une suite utile aux contenus.</h3>
+            <p>Les recommandations ne restent plus seulement des vidéos: elles deviennent des lieux à visiter.</p>
+          </article>
+          <article>
+            <span>Booking</span>
+            <h3>Préparer la conversion avec clarté.</h3>
+            <p>Les actions de réservation restent contextualisées dans le voyage, pas perdues hors du parcours utilisateur.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="confiance" class="section trust-section" aria-labelledby="trust-title">
+        <div class="section-heading">
+          <p class="kicker">CONFIANCE</p>
+          <h2 id="trust-title">Un produit pensé pour être clair, contrôlable et publiable.</h2>
+          <p>
+            Saved Trip donne à l'utilisateur le contrôle de ses imports, de son compte et de ses données. Les informations générées restent des aides de préparation et doivent être vérifiées avant réservation.
           </p>
         </div>
-        <a class="primary-action" href="mailto:support@savedtrip.com?subject=Acces%20Saved%20Trip">Nous contacter</a>
+        <div class="trust-grid">
+          <article>
+            <h3>Données personnelles</h3>
+            <p>Une politique de confidentialité dédiée explique les données collectées, les traitements IA, les prestataires et la suppression de compte.</p>
+            <a href="/privacy">Lire la confidentialité</a>
+          </article>
+          <article>
+            <h3>Conditions d'utilisation</h3>
+            <p>Les règles d'utilisation, contenus importés, services tiers, abonnements et limites de responsabilité sont accessibles publiquement.</p>
+            <a href="/terms">Lire les conditions</a>
+          </article>
+          <article>
+            <h3>Support utilisateur</h3>
+            <p>Une page support centralise les problèmes de connexion, import, compte, abonnement, bug et suppression de données.</p>
+            <a href="/support">Ouvrir le support</a>
+          </article>
+          <article>
+            <h3>Suppression de compte</h3>
+            <p>Une page dédiée explique le chemin dans l'app, le contact en cas de blocage et la différence avec les abonnements App Store.</p>
+            <a href="/delete-account">Voir la suppression</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section final-cta" aria-labelledby="final-title">
+        <div>
+          <p class="kicker">PRÊT POUR LA SUITE</p>
+          <h2 id="final-title">Construisons le futur du voyage à partir de ce que les gens sauvegardent déjà.</h2>
+          <p>Saved Trip accueille les premiers utilisateurs, partenaires et entreprises qui veulent rendre l'inspiration voyage plus utile.</p>
+        </div>
+        <div class="final-actions">
+          <a class="primary-action" href="mailto:support@savedtrip.com?subject=Acces%20Saved%20Trip">Demander l'accès</a>
+          <a class="secondary-action" href="mailto:support@savedtrip.com?subject=Partenariat%20Saved%20Trip">Discuter partenariat</a>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <span>Saved Trip</span>
-      <nav class="footer-links" aria-label="Pages legales">
+      <div>
+        <a class="footer-brand" href="/">Saved Trip</a>
+        <p>De l'inspiration voyage au plan prêt à partir.</p>
+      </div>
+      <nav class="footer-links" aria-label="Pages publiques">
+        <a href="#fonctionnement">Fonctionnement</a>
+        <a href="#partenaires">Partenaires</a>
         <a href="/terms">Conditions</a>
-        <a href="/privacy">Confidentialite</a>
+        <a href="/privacy">Confidentialité</a>
         <a href="/support">Support</a>
+        <a href="/delete-account">Supprimer le compte</a>
       </nav>
     </footer>
   </body>
