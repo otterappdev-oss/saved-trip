@@ -1,6 +1,6 @@
-# Alpine Website
+# Saved Trip Website
 
-Site vitrine statique pour Alpine, prêt à être déployé sur Vercel.
+Site vitrine statique pour Saved Trip, prêt à être déployé sur Vercel.
 
 ## Lancer en local
 
@@ -12,6 +12,4 @@ Puis ouvrir `http://localhost:4173`.
 
 ## Deployer sur Vercel
 
-Le plus propre est de créer un repo GitHub dédié au site, par exemple `alpine-website`, puis d'importer ce repo dans Vercel.
-
-Si le dossier reste dans le repo mobile, régler le `Root Directory` du projet Vercel sur `website`.
+Ce repo est le site public Saved Trip deploye sur Vercel.
